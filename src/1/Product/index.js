@@ -10,7 +10,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const styles = theme => ({
   card: {
-    maxWidth: 400
+    maxWidth: 355
   },
   media: {
     height: 0,

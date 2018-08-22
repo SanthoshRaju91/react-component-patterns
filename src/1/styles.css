@@ -29,3 +29,7 @@ button {
 button span {
   font-size: 12px;
 }
+
+.search {
+  margin-top: 10px;
+}
