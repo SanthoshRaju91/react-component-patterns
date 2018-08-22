@@ -2,6 +2,6 @@
 
 - Container Pattern 1, 2 & 3 done
 - Compound Pattern done
-- Render Props
+- Render Props done
 - HOC
 - Context API
