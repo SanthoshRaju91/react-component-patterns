@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
 import Products from "./ProductList";
 import Search from "./Search";
 
@@ -9,6 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      data: {},
       products: []
     };
   }
@@ -23,6 +23,7 @@ class App extends Component {
         });
 
         this.setState({
+          data,
           products
         });
       });
@@ -43,11 +44,26 @@ class App extends Component {
       products: updatedProducts
     });
   };
+
+  onSearch = value => {
+    const {
+      data: { products }
+    } = this.state;
+
+    const filtered = products.filter(
+      current => current.productName.toLowerCase().indexOf(value) > -1
+    );
+
+    this.setState({
+      products: filtered
+    });
+  };
+
   render() {
     const { products } = this.state;
     return (
       <div className="App">
-        <Search />
+        <Search onSearch={this.onSearch} />
         <br />
 
         <Products products={products} onFavourite={this.onFavourite} />

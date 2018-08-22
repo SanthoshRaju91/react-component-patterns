@@ -27,9 +27,6 @@ const styles = theme => ({
     fontSize: "12px",
     height: 200
   },
-  actions: {
-    display: "flex"
-  },
   price: {
     marginLeft: "30px",
     marginTop: "5px",

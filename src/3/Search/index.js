@@ -30,7 +30,7 @@ const Search = props => (
       </CardContent>
     </Card>
 
-    <SearchForm />
+    <SearchForm onSearch={props.onSearch} />
   </div>
 );
 

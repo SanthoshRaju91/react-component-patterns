@@ -10,7 +10,7 @@ const Products = ({ products = [], onFavourite }) => (
         image: current.productImages[0]
       };
       return (
-        <Grid item>
+        <Grid item key={data.id}>
           <Product data={data} onFavourite={onFavourite} />
         </Grid>
       );
