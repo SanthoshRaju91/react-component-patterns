@@ -1,6 +1,6 @@
 ## React Component Patterns Workshop
 
-- Container Pattern
+- Container Pattern 1, 2 & 3
 - Compound Pattern
 - Render Props
 - HOC

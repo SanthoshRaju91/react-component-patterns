@@ -42,18 +42,16 @@ const Product = props => (
   <Card className={props.classes.card}>
     <CardMedia
       className={props.classes.media}
-      image="https://cdn.shopify.com/s/files/1/1662/7629/products/1_79313561-9ef0-4911-912a-122709aac8e3.jpg?v=1527600590"
+      image={props.data.image}
       title="ATTIITUDE WHITE T-SHIRT WITH VERTICAL PIGMENT PRINT"
     />
     <CardContent>
       <Typography gutterBottom component="h2" className={props.classes.header}>
-        ATTIITUDE WHITE T-SHIRT WITH VERTICAL PIGMENT PRINT
+        {props.data.productName}
       </Typography>
 
       <Typography gutterBottom component="p" className={props.classes.desc}>
-        An Iconic Piece From The French Underground Collection Features A
-        Vertical Branding Between The Chest And Double I Branding On Both The
-        Sleeves. This White T-Shirt Adds A Touch Of Style To The Look.
+        {props.data.productDesc}
       </Typography>
     </CardContent>
 
@@ -63,7 +61,7 @@ const Product = props => (
       </IconButton>
 
       <Typography gutterBottom component="h2" className={props.classes.price}>
-        Price - 250
+        Price - ${props.data.price}
       </Typography>
     </CardActions>
   </Card>
